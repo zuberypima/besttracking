@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaMapMarkedAlt, FaTruckMoving, FaGasPump, FaBell, FaShieldAlt, FaChartLine } from 'react-icons/fa';
+import { FaMapMarkedAlt, FaTruckMoving, FaGasPump, FaBell, FaShieldAlt, FaChartLine, FaShareAlt } from 'react-icons/fa';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import MapMockup from '../components/MapMockup';
@@ -13,19 +13,21 @@ const Home = () => {
       <section className="hero">
         <div className="hero-overlay"></div>
         <div className="container hero-grid">
-          <div className="hero-content animate-fade-in">
-            <h1 className="hero-title">
-              Next-Gen Fleet Management & <span className="text-gradient">Car Tracking</span> in Africa
+          <div className="hero-content">
+            <h1 className="hero-title animate-slide-up">
+              TRACK YOUR VEHICLES.<br/>
+              <span className="text-gradient">IMPROVE PRODUCTIVITY.</span><br/>
+              REDUCE COSTS.
             </h1>
-            <p className="hero-subtitle animate-delay-1">
-              Empowering businesses in Tanzania and across the continent with real-time visibility, security, and advanced analytics for optimal fleet performance.
+            <p className="hero-subtitle animate-slide-up animate-delay-1">
+              With BestTracking you get it done.
             </p>
-            <div className="hero-actions animate-delay-2">
+            <div className="hero-actions animate-fade-in animate-delay-2">
               <Link to="/request-demo">
-                <Button variant="primary" size="lg">Get Started Today</Button>
+                 <Button variant="primary" size="lg">Request a free trial &gt;</Button>
               </Link>
               <Link to="/request-demo">
-                <Button variant="glass" size="lg">Request a Demo</Button>
+                 <Button variant="glass" size="lg">Get a Quote</Button>
               </Link>
             </div>
             
@@ -46,59 +48,61 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="hero-visual animate-fade-in animate-delay-1">
+            
+            <div className="hero-visual animate-fade-in animate-delay-1">
             <MapMockup />
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
+
+      {/* Contact / CTA Section */}
       <section id="features" className="features section">
         <div className="container">
           <div className="section-header text-center animate-fade-in">
-            <h2>Powerful Features for Your Fleet</h2>
+            <h2>The No. 1 Fleet Management Solution</h2>
             <p>Everything you need to secure, monitor, and manage your vehicles efficiently.</p>
           </div>
           
           <div className="features-grid">
             <Card 
-              title="Real-Time GPS Tracking" 
+              title="24/7 Vehicle Tracking" 
               icon={<FaMapMarkedAlt />}
               className="animate-fade-in"
             >
-              <p>Monitor your vehicles' exact location 24/7 with pinpoint accuracy. Know exactly where your assets are at any given moment.</p>
+              <p>Know the exact location of your vehicles at all times. Improve dispatching and customer service with accurate ETAs.</p>
             </Card>
             
             <Card 
-              title="Fuel Monitoring" 
+              title="Fuel & Maintenance" 
               icon={<FaGasPump />}
               className="animate-fade-in animate-delay-1"
             >
-              <p>Crucial for the African market. Prevent fuel theft, monitor consumption rates, and optimize routes to reduce operational costs.</p>
+              <p>Save up to 20% on fuel and maintenance. Monitor consumption rates and optimize routes to reduce operational costs.</p>
             </Card>
             
             <Card 
-              title="Geofencing Alerts" 
-              icon={<FaBell />}
+              title="Business Integration" 
+              icon={<FaChartLine />}
               className="animate-fade-in animate-delay-2"
             >
-              <p>Create virtual boundaries and receive instant notifications via SMS or email when a vehicle enters or exits designated zones.</p>
+              <p>Connect your fleet data seamlessly with your existing software and business processes for maximum efficiency.</p>
             </Card>
             
             <Card 
-              title="Driver Behavior Analytics" 
-              icon={<FaChartLine />}
+              title="Professional Navigation" 
+              icon={<FaTruckMoving />}
               className="animate-fade-in"
             >
-              <p>Improve safety and reduce wear and tear by monitoring speeding, harsh braking, and rapid acceleration.</p>
+              <p>Keep your drivers on the best routes considering vehicle size, weight, and live traffic data.</p>
             </Card>
             
             <Card 
-              title="Fleet Maintenance" 
-              icon={<FaTruckMoving />}
+              title="Workflow Management" 
+              icon={<FaBell />}
               className="animate-fade-in animate-delay-1"
             >
-              <p>Automate maintenance schedules based on mileage or engine hours to prevent costly breakdowns and extend vehicle lifespan.</p>
+              <p>Streamline communication between the office and drivers. Send jobs, messages, and updates directly to the cabin.</p>
             </Card>
             
             <Card 
@@ -109,6 +113,75 @@ const Home = () => {
               <p>Remote engine cut-off functionality in case of theft. Secure your assets with industry-leading anti-tamper hardware.</p>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Advanced Capabilities Section */}
+      <section className="advanced-features section glass-section">
+        <div className="container">
+          <div className="section-header text-center animate-fade-in">
+            <h2>Track Anything and Everything</h2>
+            <p>Comprehensive tools designed for scale, efficiency, and deep analytics.</p>
+          </div>
+
+          <div className="feature-row">
+            <div className="feature-row-text animate-fade-in">
+              <h3>Smart Route Planning & Dispatch</h3>
+              <p>Plan routes along with their TATs, stoppage times, halt times & no-entry timezones. Analyse data route-wise to identify deviations and use trends to coach drivers.</p>
+              <ul className="about-list">
+                <li><strong>Live Traffic Routing:</strong> Increase fuel efficiency and reduce ETAs.</li>
+                <li><strong>Deviation Alerts:</strong> Know instantly when a driver goes off course.</li>
+                <li><strong>Multi-Asset Support:</strong> Track cars, trailers, and construction machinery.</li>
+              </ul>
+            </div>
+            <div className="feature-row-visual animate-fade-in animate-delay-1">
+              <div className="dashboard-mockup glass-panel" style={{ height: '300px' }}>
+                <div className="mockup-header">
+                  <span className="dot red"></span><span className="dot yellow"></span><span className="dot green"></span>
+                </div>
+                <div className="mockup-body" style={{flexDirection: 'column', padding: '1.5rem', gap: '1.5rem'}}>
+                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                    <div style={{width: '20px', height: '20px', borderRadius: '50%', background: 'var(--accent-primary)'}}></div>
+                    <div style={{flex: 1, height: '8px', background: 'rgba(255,255,255,0.2)', borderRadius: '4px', position: 'relative'}}>
+                      <div style={{position: 'absolute', left: 0, top: 0, height: '100%', width: '60%', background: 'var(--accent-primary)', borderRadius: '4px'}}></div>
+                    </div>
+                    <div style={{width: '20px', height: '20px', borderRadius: '50%', border: '2px solid var(--accent-primary)'}}></div>
+                  </div>
+                  <div style={{display: 'flex', gap: '1rem', marginTop: '1rem'}}>
+                     <div style={{flex: 1, height: '100px', background: 'rgba(255,255,255,0.05)', borderRadius: '8px'}}></div>
+                     <div style={{flex: 1, height: '100px', background: 'rgba(255,255,255,0.05)', borderRadius: '8px'}}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="feature-row reverse mt-5">
+            <div className="feature-row-text animate-fade-in">
+              <h3>Custom Reporting & Analytics</h3>
+              <p>Get the hawk-eye view of stoppage time across known and unknown sites to identify areas where drivers are spending more time, leading to unwanted thefts or delays.</p>
+              <ul className="about-list">
+                <li><strong>Stoppage Analytics:</strong> Monitor exact halt durations and locations.</li>
+                <li><strong>Trip Playbacks:</strong> Replay any past trip visually on the map.</li>
+                <li><strong>Time On Site:</strong> Measure precise load and unload times.</li>
+              </ul>
+            </div>
+            <div className="feature-row-visual animate-fade-in animate-delay-1">
+              <div className="dashboard-mockup glass-panel" style={{ height: '300px' }}>
+                 <div className="mockup-header">
+                  <span className="dot red"></span><span className="dot yellow"></span><span className="dot green"></span>
+                </div>
+                <div className="mockup-body" style={{padding: '1.5rem', gap: '1rem', flexDirection: 'column'}}>
+                   <div style={{display: 'flex', gap: '1rem'}}>
+                     <div style={{flex: 1, height: '60px', background: 'rgba(0, 242, 254, 0.2)', borderRadius: '8px', borderLeft: '4px solid var(--accent-primary)'}}></div>
+                     <div style={{flex: 1, height: '60px', background: 'rgba(255, 95, 86, 0.2)', borderRadius: '8px', borderLeft: '4px solid #ff5f56'}}></div>
+                   </div>
+                   <div style={{flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: '8px', marginTop: '1rem'}}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -148,6 +221,66 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials section">
+        <div className="container">
+          <div className="section-header text-center animate-fade-in">
+            <h2>Trusted by businesses everywhere</h2>
+            <p>See how we're helping companies improve efficiency and cut costs.</p>
+          </div>
+          <div className="testimonials-grid">
+            <div className="testimonial-card glass-panel animate-fade-in">
+              <p className="quote">"When time is money, BestTracking helps us maximize efficiency. We've seen a 15% reduction in fuel costs within the first quarter."</p>
+              <div className="testimonial-author">
+                <div className="author-avatar" style={{background: 'var(--accent-primary)'}}></div>
+                <div>
+                  <h4>John M.</h4>
+                  <span>Logistics Director</span>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial-card glass-panel animate-fade-in animate-delay-1">
+              <p className="quote">"The 24/7 visibility has completely transformed how we dispatch our drivers. Customer satisfaction is at an all-time high."</p>
+              <div className="testimonial-author">
+                <div className="author-avatar" style={{background: 'var(--accent-secondary)'}}></div>
+                <div>
+                  <h4>Sarah K.</h4>
+                  <span>Operations Manager</span>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial-card glass-panel animate-fade-in animate-delay-2">
+              <p className="quote">"Security was our main concern. The remote cut-off and geofencing alerts give us the peace of mind we needed."</p>
+              <div className="testimonial-author">
+                <div className="author-avatar" style={{background: 'var(--accent-tertiary)'}}></div>
+                <div>
+                  <h4>David T.</h4>
+                  <span>Fleet Owner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Conversion Banner Section */}
+      <section className="conversion-banner">
+        <div className="container">
+          <div className="banner-content text-center animate-fade-in">
+            <h2>RETURN ON INVESTMENT IN 6 TO 9 MONTHS ON AVERAGE</h2>
+            <p>Find out how much you can save and how quickly you can get started.</p>
+            <div className="banner-cta">
+              <Link to="/request-demo">
+                <Button variant="primary" size="lg">Get a demo</Button>
+              </Link>
+              <Link to="/request-demo">
+                <Button variant="outline" size="lg" style={{borderColor: 'white', color: 'white'}}>Talk to sales</Button>
+              </Link>
             </div>
           </div>
         </div>

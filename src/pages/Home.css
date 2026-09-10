@@ -249,6 +249,118 @@
   border-radius: var(--border-radius-sm);
 }
 
+/* Advanced Features */
+.feature-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.feature-row.reverse {
+  direction: rtl;
+}
+
+.feature-row.reverse > * {
+  direction: ltr;
+}
+
+.feature-row-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.feature-row-text p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonial-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.testimonial-author h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.testimonial-author span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Conversion Banner */
+.conversion-banner {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #1e5dd6 100%);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.banner-content p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.5rem;
+}
+
+.banner-cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
 /* Contact / CTA Section */
 .contact {
   position: relative;
@@ -323,14 +435,30 @@ select.form-control option {
     justify-content: center;
   }
 
-  .about-content {
+  .about-content, .feature-row {
     grid-template-columns: 1fr;
   }
   
-  .about-image {
+  .feature-row.reverse {
+    direction: ltr;
+  }
+
+  .about-image, .feature-row-visual {
     order: -1;
   }
   
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-cta {
+    flex-direction: column;
+  }
+  
+  .banner-content h2 {
+    font-size: 2rem;
+  }
+
   .cta-container {
     grid-template-columns: 1fr;
   }
