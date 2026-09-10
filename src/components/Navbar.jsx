@@ -35,13 +35,17 @@ const Navbar = () => {
           <a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About Us</a>
           <a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact</a>
           <div className="mobile-only">
-            <Button variant="primary">Get a Quote</Button>
+            <Link to="/request-demo" onClick={() => setMobileMenuOpen(false)}>
+              <Button variant="primary" className="w-100">Get a Quote</Button>
+            </Link>
           </div>
         </div>
 
         <div className="navbar-actions desktop-only">
           <Button variant="outline" className="mr-2">Login</Button>
-          <Button variant="primary">Get a Quote</Button>
+          <Link to="/request-demo">
+            <Button variant="primary">Get a Quote</Button>
+          </Link>
         </div>
 
         <button className="mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

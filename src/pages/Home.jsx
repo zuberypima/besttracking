@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaMapMarkedAlt, FaTruckMoving, FaGasPump, FaBell, FaShieldAlt, FaChartLine } from 'react-icons/fa';
 import Button from '../components/Button';
 import Card from '../components/Card';
+import MapMockup from '../components/MapMockup';
 import './Home.css';
 
 const Home = () => {
@@ -10,33 +12,42 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-overlay"></div>
-        <div className="container hero-content animate-fade-in">
-          <h1 className="hero-title">
-            Next-Gen Fleet Management & <span className="text-gradient">Car Tracking</span> in Africa
-          </h1>
-          <p className="hero-subtitle animate-delay-1">
-            Empowering businesses in Tanzania and across the continent with real-time visibility, security, and advanced analytics for optimal fleet performance.
-          </p>
-          <div className="hero-actions animate-delay-2">
-            <Button variant="primary" size="lg">Get Started Today</Button>
-            <Button variant="glass" size="lg">Request a Demo</Button>
+        <div className="container hero-grid">
+          <div className="hero-content animate-fade-in">
+            <h1 className="hero-title">
+              Next-Gen Fleet Management & <span className="text-gradient">Car Tracking</span> in Africa
+            </h1>
+            <p className="hero-subtitle animate-delay-1">
+              Empowering businesses in Tanzania and across the continent with real-time visibility, security, and advanced analytics for optimal fleet performance.
+            </p>
+            <div className="hero-actions animate-delay-2">
+              <Link to="/request-demo">
+                <Button variant="primary" size="lg">Get Started Today</Button>
+              </Link>
+              <Link to="/request-demo">
+                <Button variant="glass" size="lg">Request a Demo</Button>
+              </Link>
+            </div>
+            
+            <div className="hero-stats animate-delay-3">
+              <div className="stat-item">
+                <span className="stat-value text-gradient">99.9%</span>
+                <span className="stat-label">Uptime</span>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-item">
+                <span className="stat-value text-gradient">24/7</span>
+                <span className="stat-label">Local Support</span>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-item">
+                <span className="stat-value text-gradient">5000+</span>
+                <span className="stat-label">Vehicles Tracked</span>
+              </div>
+            </div>
           </div>
-          
-          <div className="hero-stats animate-delay-3">
-            <div className="stat-item">
-              <span className="stat-value text-gradient">99.9%</span>
-              <span className="stat-label">Uptime</span>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <span className="stat-value text-gradient">24/7</span>
-              <span className="stat-label">Local Support</span>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <span className="stat-value text-gradient">5000+</span>
-              <span className="stat-label">Vehicles Tracked</span>
-            </div>
+          <div className="hero-visual animate-fade-in animate-delay-1">
+            <MapMockup />
           </div>
         </div>
       </section>
@@ -119,7 +130,6 @@ const Home = () => {
               <Button variant="primary" className="mt-4">Learn More About Us</Button>
             </div>
             <div className="about-image animate-fade-in animate-delay-1">
-              {/* Using a placeholder for a dashboard mockup or map */}
               <div className="dashboard-mockup glass-panel">
                 <div className="mockup-header">
                   <span className="dot red"></span>
