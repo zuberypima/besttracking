@@ -1,0 +1,136 @@
+.features-page {
+  padding-top: 80px; /* Account for navbar */
+}
+
+.features-hero {
+  position: relative;
+  padding: 6rem 0 4rem;
+  background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop') center/cover;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.features-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, var(--bg-dark) 100%);
+}
+
+.features-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.features-hero-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.core-pillars {
+  padding-top: 4rem;
+}
+
+.feature-detail-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.feature-detail-row.reverse {
+  direction: rtl;
+}
+
+.feature-detail-row.reverse > * {
+  direction: ltr;
+}
+
+.feature-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.category-icon {
+  font-size: 1.25rem;
+}
+
+.feature-category span {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.feature-detail-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-detail-text p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.feature-detail-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.feature-detail-list li svg {
+  color: var(--accent-primary);
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.feature-detail-list li strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 992px) {
+  .feature-detail-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-detail-row.reverse {
+    direction: ltr;
+  }
+  
+  .feature-detail-visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-hero h1 {
+    font-size: 2.5rem;
+  }
+}
