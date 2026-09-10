@@ -50,8 +50,8 @@ const Home = () => {
           </div>
             
             <div className="hero-visual animate-fade-in animate-delay-1">
-            <MapMockup />
-          </div>
+              <img src="/assets/hero_dashboard.jpg" alt="Fleet Management Dashboard" className="hero-image glass-panel" />
+            </div>
         </div>
       </section>
 
@@ -135,24 +135,7 @@ const Home = () => {
               </ul>
             </div>
             <div className="feature-row-visual animate-fade-in animate-delay-1">
-              <div className="dashboard-mockup glass-panel" style={{ height: '300px' }}>
-                <div className="mockup-header">
-                  <span className="dot red"></span><span className="dot yellow"></span><span className="dot green"></span>
-                </div>
-                <div className="mockup-body" style={{flexDirection: 'column', padding: '1.5rem', gap: '1.5rem'}}>
-                  <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                    <div style={{width: '20px', height: '20px', borderRadius: '50%', background: 'var(--accent-primary)'}}></div>
-                    <div style={{flex: 1, height: '8px', background: 'rgba(255,255,255,0.2)', borderRadius: '4px', position: 'relative'}}>
-                      <div style={{position: 'absolute', left: 0, top: 0, height: '100%', width: '60%', background: 'var(--accent-primary)', borderRadius: '4px'}}></div>
-                    </div>
-                    <div style={{width: '20px', height: '20px', borderRadius: '50%', border: '2px solid var(--accent-primary)'}}></div>
-                  </div>
-                  <div style={{display: 'flex', gap: '1rem', marginTop: '1rem'}}>
-                     <div style={{flex: 1, height: '100px', background: 'rgba(255,255,255,0.05)', borderRadius: '8px'}}></div>
-                     <div style={{flex: 1, height: '100px', background: 'rgba(255,255,255,0.05)', borderRadius: '8px'}}></div>
-                  </div>
-                </div>
-              </div>
+              <img src="/assets/tracking_ui.jpg" alt="Tracking Map Interface" className="feature-image glass-panel" />
             </div>
           </div>
 
@@ -167,18 +150,7 @@ const Home = () => {
               </ul>
             </div>
             <div className="feature-row-visual animate-fade-in animate-delay-1">
-              <div className="dashboard-mockup glass-panel" style={{ height: '300px' }}>
-                 <div className="mockup-header">
-                  <span className="dot red"></span><span className="dot yellow"></span><span className="dot green"></span>
-                </div>
-                <div className="mockup-body" style={{padding: '1.5rem', gap: '1rem', flexDirection: 'column'}}>
-                   <div style={{display: 'flex', gap: '1rem'}}>
-                     <div style={{flex: 1, height: '60px', background: 'rgba(0, 242, 254, 0.2)', borderRadius: '8px', borderLeft: '4px solid var(--accent-primary)'}}></div>
-                     <div style={{flex: 1, height: '60px', background: 'rgba(255, 95, 86, 0.2)', borderRadius: '8px', borderLeft: '4px solid #ff5f56'}}></div>
-                   </div>
-                   <div style={{flex: 1, background: 'rgba(255,255,255,0.05)', borderRadius: '8px', marginTop: '1rem'}}></div>
-                </div>
-              </div>
+              <img src="/assets/analytics_ui.jpg" alt="Analytics Dashboard" className="feature-image glass-panel" />
             </div>
           </div>
 
@@ -203,24 +175,7 @@ const Home = () => {
               <Button variant="primary" className="mt-4">Learn More About Us</Button>
             </div>
             <div className="about-image animate-fade-in animate-delay-1">
-              <div className="dashboard-mockup glass-panel">
-                <div className="mockup-header">
-                  <span className="dot red"></span>
-                  <span className="dot yellow"></span>
-                  <span className="dot green"></span>
-                </div>
-                <div className="mockup-body">
-                  <div className="mockup-sidebar"></div>
-                  <div className="mockup-main">
-                    <div className="mockup-map"></div>
-                    <div className="mockup-stats">
-                      <div className="mockup-stat-card"></div>
-                      <div className="mockup-stat-card"></div>
-                      <div className="mockup-stat-card"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img src="/assets/security_ui.jpg" alt="Security Dashboard" className="feature-image glass-panel" />
             </div>
           </div>
         </div>

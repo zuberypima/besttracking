@@ -160,6 +160,17 @@
   color: var(--text-primary);
 }
 
+/* Hero Mockup/Image */
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
 /* Dashboard Mockup */
 .dashboard-mockup {
   width: 100%;
@@ -276,6 +287,19 @@
   color: var(--text-secondary);
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-image:hover {
+  transform: translateY(-5px);
 }
 
 /* Testimonials */

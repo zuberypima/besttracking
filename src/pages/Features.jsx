@@ -73,16 +73,7 @@ const Features = () => {
               </ul>
             </div>
             <div className="feature-detail-visual">
-              <div className="dashboard-mockup glass-panel" style={{ height: '350px' }}>
-                <div className="mockup-header"><span className="dot red"></span><span className="dot yellow"></span><span className="dot green"></span></div>
-                <div className="mockup-body" style={{padding: '0'}}>
-                  <div style={{width: '100%', height: '100%', background: 'rgba(0, 242, 254, 0.1)', position: 'relative'}}>
-                     <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '40px', height: '40px', borderRadius: '50%', background: 'var(--accent-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(0, 242, 254, 0.5)'}}>
-                       <div style={{width: '10px', height: '10px', background: 'white', borderRadius: '50%'}}></div>
-                     </div>
-                  </div>
-                </div>
-              </div>
+              <img src="/assets/tracking_ui.jpg" alt="Live Tracking UI" className="feature-image glass-panel" />
             </div>
           </div>
         </div>
@@ -106,27 +97,7 @@ const Features = () => {
               </ul>
             </div>
             <div className="feature-detail-visual">
-               <div className="dashboard-mockup glass-panel" style={{ height: '350px' }}>
-                <div className="mockup-header"><span className="dot red"></span><span className="dot yellow"></span><span className="dot green"></span></div>
-                <div className="mockup-body" style={{flexDirection: 'column', padding: '2rem', gap: '1.5rem'}}>
-                   <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem', background: 'rgba(255, 95, 86, 0.1)', border: '1px solid #ff5f56', borderRadius: '8px'}}>
-                     <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                        <FaBell style={{color: '#ff5f56', fontSize: '1.5rem'}} />
-                        <span style={{color: 'white', fontWeight: 'bold'}}>Geofence Exit Alert!</span>
-                     </div>
-                     <span style={{color: 'var(--text-secondary)'}}>10:42 AM</span>
-                   </div>
-                   <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem', background: 'rgba(255,255,255, 0.05)', borderRadius: '8px'}}>
-                     <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                        <FaShieldAlt style={{color: 'var(--accent-primary)', fontSize: '1.5rem'}} />
-                        <span style={{color: 'white'}}>Engine Cut-off Ready</span>
-                     </div>
-                     <div style={{width: '40px', height: '24px', background: 'var(--accent-primary)', borderRadius: '12px', position: 'relative'}}>
-                        <div style={{position: 'absolute', right: '2px', top: '2px', width: '20px', height: '20px', background: 'white', borderRadius: '50%'}}></div>
-                     </div>
-                   </div>
-                </div>
-              </div>
+              <img src="/assets/security_ui.jpg" alt="Security Dashboard" className="feature-image glass-panel" />
             </div>
           </div>
         </div>
@@ -150,21 +121,7 @@ const Features = () => {
               </ul>
             </div>
             <div className="feature-detail-visual">
-               <div className="dashboard-mockup glass-panel" style={{ height: '350px' }}>
-                <div className="mockup-header"><span className="dot red"></span><span className="dot yellow"></span><span className="dot green"></span></div>
-                <div className="mockup-body" style={{flexDirection: 'column', padding: '2rem', gap: '1.5rem', justifyContent: 'flex-end'}}>
-                   <div style={{display: 'flex', alignItems: 'flex-end', gap: '1rem', height: '150px', borderBottom: '1px solid rgba(255,255,255,0.1)'}}>
-                      <div style={{flex: 1, height: '40%', background: 'var(--accent-primary)', borderRadius: '4px 4px 0 0'}}></div>
-                      <div style={{flex: 1, height: '70%', background: 'var(--accent-secondary)', borderRadius: '4px 4px 0 0'}}></div>
-                      <div style={{flex: 1, height: '50%', background: 'var(--accent-tertiary)', borderRadius: '4px 4px 0 0'}}></div>
-                      <div style={{flex: 1, height: '90%', background: 'var(--accent-primary)', borderRadius: '4px 4px 0 0'}}></div>
-                      <div style={{flex: 1, height: '30%', background: 'var(--accent-secondary)', borderRadius: '4px 4px 0 0'}}></div>
-                   </div>
-                   <div style={{display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.9rem'}}>
-                      <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
-                   </div>
-                </div>
-              </div>
+              <img src="/assets/analytics_ui.jpg" alt="Analytics Dashboard" className="feature-image glass-panel" />
             </div>
           </div>
         </div>
