@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Color Palette - Premium Dark Theme */
-  --bg-dark: #0a0c10;
-  --bg-card: rgba(22, 27, 34, 0.6);
-  --bg-card-hover: rgba(30, 37, 46, 0.8);
+  /* Color Palette - Premium Light Theme */
+  --bg-dark: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --bg-card-hover: rgba(245, 247, 250, 0.9);
   
-  --text-primary: #f0f6fc;
-  --text-secondary: #8b949e;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
   
-  --accent-primary: #00f2fe;
-  --accent-secondary: #4facfe;
+  --accent-primary: #02833a;
+  --accent-secondary: #002351;
   --accent-gradient: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent-primary) 100%);
   
-  --border-color: rgba(240, 246, 252, 0.1);
-  --border-highlight: rgba(0, 242, 254, 0.3);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --border-highlight: rgba(2, 131, 58, 0.3);
 
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -27,7 +27,7 @@
   --spacing-xl: 4rem;
 
   /* Effects */
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   --glass-blur: blur(12px);
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;

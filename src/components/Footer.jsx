@@ -10,8 +10,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <FaMapMarkerAlt className="logo-icon" />
-              <span className="logo-text">Best<span className="text-gradient">Tracking</span></span>
+              <img src="/assets/logo.png" alt="BestTracking Logo" className="logo-image" />
             </Link>
             <p className="footer-description">
               The premier car tracking and fleet management solution for businesses across Tanzania and Africa. Secure your assets with real-time visibility.

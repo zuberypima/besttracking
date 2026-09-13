@@ -25,8 +25,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          <FaMapMarkerAlt className="logo-icon" />
-          <span className="logo-text">Best<span className="text-gradient">Tracking</span></span>
+          <img src="/assets/logo.png" alt="BestTracking Logo" className="logo-image" />
         </Link>
 
         <div className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
