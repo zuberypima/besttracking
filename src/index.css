@@ -20,7 +20,7 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   
   /* Layout & Spacing */
-  --container-max: 1200px;
+  --container-max: 1440px;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
@@ -116,6 +116,7 @@ p {
 
 /* Global layout */
 .container {
+  width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--spacing-lg);

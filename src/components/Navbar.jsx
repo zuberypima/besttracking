@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import './Navbar.css';
-import { FaMapMarkerAlt, FaBars, FaTimes } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaBars, FaTimes, FaPhoneAlt } from 'react-icons/fa';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -40,7 +40,10 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="navbar-actions desktop-only">
+        <div className="navbar-actions desktop-only" style={{ alignItems: 'center' }}>
+          <span className="nav-contact-number" style={{ marginRight: '1.5rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <FaPhoneAlt /> +255 713 788 841
+          </span>
           <Button variant="outline" className="mr-2">Login</Button>
           <Link to="/request-demo">
             <Button variant="primary">Get a Quote</Button>

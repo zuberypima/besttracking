@@ -47,9 +47,9 @@ const Footer = () => {
             <div className="footer-column">
               <h4 className="footer-heading">Contact Us</h4>
               <ul className="footer-list">
-                <li>Dar es Salaam, Tanzania</li>
+                <li>Lumumba Tower, Second Floor<br/>Dar-es-salaam, Tanzania</li>
                 <li>info@besttracking.co.tz</li>
-                <li>+255 700 000 000</li>
+                <li>+255 713 788 841</li>
               </ul>
             </div>
           </div>
