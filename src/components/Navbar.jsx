@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Button from './Button';
 import './Navbar.css';
 import { FaMapMarkerAlt, FaBars, FaTimes, FaPhoneAlt } from 'react-icons/fa';
@@ -7,6 +7,39 @@ import { FaMapMarkerAlt, FaBars, FaTimes, FaPhoneAlt } from 'react-icons/fa';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Scroll to hash when location changes (e.g. arriving from another page)
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else if (location.pathname === '/') {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
+  const handleNavClick = (e, hash) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    
+    if (location.pathname === '/') {
+      // Already on home, just scroll
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', hash);
+      }
+    } else {
+      // Navigate to home with hash
+      navigate('/' + hash);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,8 +64,8 @@ const Navbar = () => {
         <div className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
           <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</Link>
           <Link to="/features" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Features</Link>
-          <a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About Us</a>
-          <a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+          <a href="#about" className="nav-link" onClick={(e) => handleNavClick(e, '#about')}>About Us</a>
+          <a href="#contact" className="nav-link" onClick={(e) => handleNavClick(e, '#contact')}>Contact</a>
           <div className="mobile-only">
             <Link to="/request-demo" onClick={() => setMobileMenuOpen(false)}>
               <Button variant="primary" className="w-100">Get a Quote</Button>
