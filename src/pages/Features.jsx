@@ -3,9 +3,17 @@ import { Link } from 'react-router-dom';
 import { FaMapMarkedAlt, FaTruckMoving, FaGasPump, FaBell, FaShieldAlt, FaChartLine, FaShareAlt, FaRoute, FaClipboardList, FaFileAlt } from 'react-icons/fa';
 import Button from '../components/Button';
 import Card from '../components/Card';
+import { usePageSEO } from '../hooks/usePageSEO';
 import './Features.css';
 
 const Features = () => {
+  usePageSEO({
+    title: 'Features | BestTracking (Best Tracking) Tanzania — GPS & Fleet Management',
+    description:
+      'Explore BestTracking features in Tanzania: real-time GPS tracking, fuel monitoring, geofencing alerts, driver behavior reports, and anti-theft vehicle security.',
+    path: '/features',
+  });
+
   // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);

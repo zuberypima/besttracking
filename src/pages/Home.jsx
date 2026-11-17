@@ -4,9 +4,17 @@ import { FaMapMarkedAlt, FaTruckMoving, FaGasPump, FaBell, FaShieldAlt, FaChartL
 import Button from '../components/Button';
 import Card from '../components/Card';
 import MapMockup from '../components/MapMockup';
+import { usePageSEO } from '../hooks/usePageSEO';
 import './Home.css';
 
 const Home = () => {
+  usePageSEO({
+    title: 'BestTracking (Best Tracking) Tanzania | GPS Car Tracking & Fleet Management',
+    description:
+      "BestTracking (Best Tracking) is Tanzania's trusted GPS car tracking and fleet management company in Dar es Salaam. Real-time vehicle tracking, fuel monitoring, geofencing, and 24/7 anti-theft security.",
+    path: '/',
+  });
+
   return (
     <div className="home-page">
       {/* Hero Section */}

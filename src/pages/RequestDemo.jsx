@@ -2,9 +2,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaCheckCircle, FaArrowLeft } from 'react-icons/fa';
 import Button from '../components/Button';
+import { usePageSEO } from '../hooks/usePageSEO';
 import './RequestDemo.css';
 
 const RequestDemo = () => {
+  usePageSEO({
+    title: 'Request a Demo | BestTracking (Best Tracking) Tanzania',
+    description:
+      'Request a live GPS vehicle tracking and fleet management demo from BestTracking in Dar es Salaam, Tanzania.',
+    path: '/request-demo',
+  });
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
